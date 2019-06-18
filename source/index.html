@@ -5,6 +5,7 @@
   <title>Market Maker Technology</title>
   <link rel="stylesheet" type="text/css" href="css/style.css">
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700|Oswald:400,500,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="less/normalaiz.less">
 </head>
   <svg style="display:none">
     <symbol  viewBox="0 0 481.95 565.62" id ="bitfinex"><defs><style>.cls-1{fill:#3e3f5d;fill-rule:evenodd;}</style></defs><title> 915621680</title><g id="Слой_2" data-name="Слой 2"><g id="Слой_1-2" data-name="Слой 1"><g id="_915621680" data-name=" 915621680"><path id="Path-1-Copy-9" class="cls-1" d="M18.24,409.72C40.46,433.25,162.52,546,354.11,415.14,492.65,307.25,489.19,73.34,475.88,2.71,471.24,13,310.33,365.37,18.24,409.72ZM475.86,2.65c-1.7-.7-179.93-25-356.13,88.48C10.31,161.61-4.15,264.75.84,333.47,257,304.81,470.05,10.73,475.86,2.65Z"/><path id="BITFINEX-Copy-3" class="cls-1" d="M56.6,558.42H34v-12H56.6c5.66,0,8.55,2.7,8.55,6.21s-2.83,5.84-8.55,5.84Zm-.74-18.51H34V529.76h21.9c6,0,8.3,2.09,8.3,5,0,2.65-2.7,5.17-8.3,5.17ZM61.64,543c9.53-.3,13-5,13-10.21,0-5.66-4.49-10.33-15.44-10.33h-35v43.18H60.23c9,0,15.68-3.75,15.68-11.81,0-5.72-3.75-10.58-14.27-10.83Zm25.82-20.54v43.18h9.78V522.44Zm49.45,8.18h21.52v-8.18H105.6v8.18h21.53v35h9.78Zm29.88-8.18v43.18h9.78V548.77h22.94v-7.08H176.57V529.88h37.27v-7.44Zm55,0v43.18h9.78V522.44ZM254.48,533l32.42,32.66H298V522.44h-9.66v31.12l-31.12-31.12H244.76v43.18h9.72Zm56.7-10.52v43.18H359v-7.26H321V546.49h22.82v-6.71H321v-9.9H359v-7.44Zm113.36,0H411.62l-16.49,15.19-16.36-15.19h-13.1l23,21.28-23.86,21.9h12.92L395,549.69l17.22,15.93H425.4l-23.93-22Z"/></g></g></g>
@@ -39,10 +40,12 @@
 <body>
   <header class="page-header">
     <div class="container">
-      <nav class="main-nav">
-        <ul class="sait-list">
-          <li class="sait-list__item"><a class="main-nav__link" href="#"><img src="img/logo/logo.png" width="62px" height="22px" alt="MMT"></a>
-        </li>
+      <nav class="main-nav main-nav--closed">
+        <a class="main-nav__link" href="#"><img class="main-nav__img" src="img/logo/logo.png" width="62" height="22"></a>
+        <button class="main-nav__toggle" type="button">
+          <span class="visually-hidden">Открыть меню</span>
+        </button>
+        <ul class="sait-list sait-list__off">
           <li class="sait-list__item">
             <a class="sait-list__link" href="#">About</a>
           </li>
@@ -53,7 +56,7 @@
             <a class="sait-list__link" href="#">Token</a>
           </li>
           <li class="sait-list__item">
-            <a class="sait-list__link" href="#">Development map</a>
+            <a class="sait-list__link" href="#"><span class="advantages__list-element">Development</span> Map</a>
           </li>
           <li class="sait-list__item">
             <a class="sait-list__link" href="#">Team</a>
@@ -67,53 +70,57 @@
           <li class="sait-list__item">
             <a class="sait-list__link" href="#">White paper</a>
           </li>
-        </ul>
-        <ul class="language-list">
-          <li class="language-list__item">
-            <a class="language-list__link" href="#">en</a>
-          </li>
-          <li class="language-list__item">
-            <a class="language-list__link" href="#">ru</a>
+          <li class="sait-list__item">
+            <p class="siit-list__langvich">
+              <a class="sait-list__link sait-list__link--active" href="#">en</a>&#160;&#8260;&#160;<a class="sait-list__link" href="#"> ru</a>
+            </p>
           </li>
         </ul>
       </nav>
     </div>
   </header>
   <main class="page-main">
-    <div class="about">
-      <div class="about__wrapper">
-        <div class="about__box">
-          <h1 class="about__top-heading">Market maker technology</h1>
-          <h2 class="about__heading global__heading">The 1st professional Market Maker of cryptocurrency market</h2>
-          <p class="about__text global-text">The infrastructure project Market Maker Technology aims to support the liquidity of the main blockchain cryptocurrencies. We will protect the cryptocurrency market from excessive volatility, fraudulent influence and the impact of information stuffing.</p>
+      <div class="about">
+        <div class="about__wrapper">
+          <div class="container-nopading">
+            <div class="about-box">
+              <h1 class="about__top-heading about-box__top-position">Market<br>maker technology</h1>
+              <h2 class="about__heading about-box__position global-heading">The 1st professional Market Maker of cryptocurrency market</h2>
+            </div>
+          </div>
         </div>
-      </div>
+        <div class="container-nopading">
+          <p class="about__text global-text">The infrastructure project Market Maker Technology aims to support the liquidity of the main blockchain cryptocurrencies.
+          <p class="about__text  about__text-mod">We will protect the cryptocurrency market from excessive volatility,<br>
+          fraudulent influence and the impact of information stuffing.</p>
+        </div>
     </div>
-      <section class="video-box slider">
-        <h2 class="video-box__hedline global__header-external">We know what we are doing</h2>
-        <input class="visually-hidden" type="radio" id="product-1" name="toggle" checked>
-        <input class="visually-hidden" type="radio" id="product-2" name="toggle">
-        <input class="visually-hidden" type="radio" id="product-3" name="toggle">
-        <div class="slider__controls">
-          <label class="slider__controls-item slider__controls-item--1" for="product-1">first</label>
-          <label class="slider__controls-item slider__controls-item--2" for="product-2">second</label>
-          <label class="slider__controls-item slider__controls-item--3" for="product-3">third</label>
+    <section class="video-box slider">
+      <div class="container">
+        <div class="site-wrapper">
+          <h2 class="video-box__hedline global__header-external">We know what we are doing</h2>
+          <input class="visually-hidden" type="radio" id="product-1" name="toggle" checked>
+          <input class="visually-hidden" type="radio" id="product-2" name="toggle">
+          <input class="visually-hidden" type="radio" id="product-3" name="toggle">
+          <div class="slider__controls">
+            <label class="slider__controls-item" for="product-1">first</label>
+            <label class="slider__controls-item" for="product-2">second</label>
+            <label class="slider__controls-item" for="product-3">third</label>
+          </div>
+          <ul class="slider__list">
+            <li class="slider__item slider__slide" id="slide1">
+              <iframe class="slider__element" width="240" height="150" src="https://www.youtube.com/embed/siCH6kW0MZU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </li>
+            <li class="slider-item slider__slide" id="slide2">
+              <iframe class="slider__element" width="240" height="150" src="https://www.youtube.com/embed/T5beqefyCfU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </li>
+            <li class="slider-item slider__slide" id="slide3">
+              <iframe class="slider__element" width="240" height="150" src="https://www.youtube.com/embed/T5beqefyCfU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </li>
+          </ul>
         </div>
-        <ul class="slider__list">
-          <li class="slider__item">
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/siCH6kW0MZU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-          </li>
-          <li class="slider-item">
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/T5beqefyCfU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-          </li>
-          <li class="slider-item">
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/T5beqefyCfU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-          </li>
-        </ul>
       </div>
     </section>
-
-    </article>
     <section class="services">
       <div class="container">
         <h2 class="visually-hidden">opportunities</h2>
@@ -131,190 +138,164 @@
           <p class="services__text global-text">We help investors fix profits without a price collapse. You can sell tokens to us and not wait for the execution of pending orders.</p>
         </div>
         <div class="services__box">
-          <h3 class="services__heading global__internal-header">We provide counter quotes</h3>
+          <h3 class="services__heading global__internal-header">We form the market</h3>
           <p class="services__text global-text">We set quotes for both purchase and sale. You can make deals with us in both small and high volumes.</p>
         </div>
         <div class="services__box">
-          <h3 class="services__heading global__internal-header">We form the market</h3>
+          <h3 class="services__heading global__internal-header">We making the market liquid</h3>
           <p class="services__text global-text">We analyze the real supply and demand, and then, on the basis of the analysis, set quotes. You always see the market price, protected from manipulation and PUMP.</p>
         </div>
         <div class="services__box">
-          <h3 class="services__heading global__internal-header">We making the market liquid</h3>
+          <h3 class="services__heading services__heading--mod global__internal-header">We provide counter quotes</h3>
           <p class="services__text global-text">We give investors the opportunity to implement their strategies at any time and in any amount.</p>
         </div>
       </div>
     </section>
     <section class="comparison">
-      <h2 class="comparison__heading global__header-external">How we do it</h2>
+      <h2 class="comparison__heading global__header-external">We know what we are doing</h2>
       <div class="container">
         <div class="comparison__wrapper">
-          <div class="comparison__left">
-            <h3 class="comparison__heading-internal global__internal-header">without MMT</h3>
-            <img class="comparison__img-left" src="img/schedule/gr-1.png" width="568px" height="524px" alt="schedule without MMT">
+          <div class="comparison__box comparison__left">
+            <h3 class="comparison__heading-internal global__internal-header">Without MMT</h3>
+            <img class="comparison__img-left" src="img/schedule/chart-no-eng-mobile.png" width="240px" height="205px" alt="schedule without MMT">
           </div>
-          <div class="comparison__right">
-            <h3 class="comparison__heading-internal global__internal-header">with MMT</h3>
-            <img class="comparison__img-right" src="img/schedule/gr-2.png" width="568px" height="524px" alt="schedule without MMT">
+          <div class="comparison__box comparison__box-right  comparison__right">
+            <h3 class="comparison__heading-internal global__internal-header">Without MMT</h3>
+            <img class="comparison__img-right" src="img/schedule/chart-mmt-eng-mobile.png" width="240px" height="195px" alt="schedule without MMT">
           </div>
         </div>
       </div>
     </section>
     <section class="advantages">
-      <h2 class="visually-hidden">Our advantages</h2>
-      <div class="container-internal">
-        <div class="advantages__wrapper">
-          <div class="advantages__box">
-            <h3 class="advantages__hedline global__internal-header">Protection</h3>
-            <ul class="advantages__list-protection">
-              <li class="advantages__list-item">fraud <span class="advantages__list-element">(PUMP, price overclocking, trading volume overclocking)</span></li>
-              <li class="advantages__list-item">volatility <span class="advantages__list-element">(panic fall, unreasonable price increase)</span></li>
-              <li class="advantages__list-item">manipulation <span class="advantages__list-element">(collapse of a small lot in the "night" session of the trade)</span></li>
-            </ul>
-            <img class="advantages__img" src="#" alt="Protection">
-          </div>
-          <div class="advantages__box">
-            <h3 class="advantages__hedline global__internal-header">Stability</h3>
-            <ul class="advantages__list-protection">
-              <li class="advantages__list-item">the ability to trade large lots without affecting the price</li>
-              <li class="advantages__list-item">real trading volume</li>
-              <li class="advantages__list-item">stabilization of the trend</li>
-              <li class="advantages__list-item">minimum spread</li>
-              <li class="advantages__list-item">real price</li>
-            </ul>
-            <img class="advantages__img" src="#" alt="Stability">
-          </div>
-          <div class="advantages__box">
-            <h3 class="advantages__hedline global__internal-header">Hedging</h3>
-            <ul class="advantages__list-protection">
-              <li class="advantages__list-item">reduction of losses in case of falling prices of leading cryptocurrencies</li>
-              <li class="advantages__list-item">alternative to storing cryptocurrency</li>
-              <li class="advantages__list-item">contribution to the development of the entire market</li>
-            </ul>
-            <img class="advantages__img" src="#" alt="Hedging">
+      <div class="container">
+        <h2 class="visually-hidden">Our advantages</h2>
+        <div class="container-internal">
+          <div class="advantages__wrapper">
+            <div class="advantages__box">
+              <h3 class="advantages__hedline global__internal-header">Protection</h3>
+              <img class="advantages__img" src="img/schedule/protection-mobile.jpg" width="240px" height="240px" alt="Protection">
+              <ul class="advantages__list-protection">
+                <li class="advantages__list-item">fraud <span class="advantages__list-element">(PUMP, price overclocking, trading volume overclocking)</span></li>
+                <li class="advantages__list-item">volatility <span class="advantages__list-element">(panic fall, unreasonable price increase)</span></li>
+                <li class="advantages__list-item">manipulation <span class="advantages__list-element">(collapse of a small lot in the "night" session of the trade)</span></li>
+              </ul>
+            </div>
+            <div class="advantages__box">
+              <h3 class="advantages__hedline global__internal-header">Stability</h3>
+              <img class="advantages__img" src="img/schedule/stability-mobile.jpg" width="240px" height="240px" alt="Stability">
+              <ul class="advantages__list-protection">
+                <li class="advantages__list-item"><span class="advantages__list-element">the ability to</span> trading large lots without affecting the price</li>
+                <li class="advantages__list-item">real trading volume</li>
+                <li class="advantages__list-item">stabilization of the trend</li>
+                <li class="advantages__list-item">minimum spread</li>
+                <li class="advantages__list-item">real price</li>
+              </ul>
+            </div>
+            <div class="advantages__box">
+              <h3 class="advantages__hedline global__internal-header">Hedging</h3>
+              <img class="advantages__img" src="img/schedule/Hedging-mobile.jpg" width="240px" height="240px" alt="Hedging">
+              <ul class="advantages__list-protection">
+                <li class="advantages__list-item">reduction of losses<span class="advantages__list-element">in case of falling prices of leading cryptocurrencies</span></li>
+                <li class="advantages__list-item">alternative to storing cryptocurrency</li>
+                <li class="advantages__list-item"><span class="advantages__list-element">contribution to the</span> development of the entire market</li>
+              </ul>
+            </div>
           </div>
         </div>
       </div>
-    </section>
-    <section class="rating">
-      <h2 class="visually-hidden">Rating</h2>
-      <div class="rating__wrapper">
-        <div class="rating__partners">
-          <h3 class="rating__partners-hedline global__internal-header">TOP - 1 Partners</h3>
-          <ul class="rating__partners-list">
-            <li class="rating__partners-item">banking sector</li>
-            <li class="rating__partners-item">stock market</li>
-            <li class="rating__partners-item">cyber defense</li>
-            <li class="rating__partners-item">financial technology</li>
-            <li class="rating__partners-item">blockchain</li>
-          </ul>
-        </div>
-        <div class="rating__partners">
-          <h3 class="rating__partners-hedline global__internal-header">TOP - 5 Cryptobirge</h3>
-          <ul class="rating__partners-list">
-            <li class="rating__partners-item">Binance</li>
-            <li class="rating__partners-item">Bitfinex</li>
-            <li class="rating__partners-item">Kraken</li>
-            <li class="rating__partners-item">Gemini</li>
-            <li class="rating__partners-item">Huobi</li>
-          </ul>
-        </div>
-        <div class="rating__partners">
-          <h3 class="rating__partners-hedline global__internal-header">TOP - 30 Cryptocurrency</h3>
-          <ul class="rating__partners-list">
-            <li class="rating__partners-item">capitalization of more than $ 500 m</li>
-            <li class="rating__partners-item">daily turnover of $ 10 m</li>
-            <li class="rating__partners-item">work more than 12 months</li>
-            <li class="rating__partners-item">market leaders</li>
-            <li class="rating__partners-item">trust of millions</li>
-          </ul>
-        </div>
     </section>
     <section class="token">
-      <div class="container-internal">
+      <div class="container">
         <h2 class="token__hedline global__header-external">Token MMT</h2>
         <div class="token__wrapper">
-          <p class="token__text">Every day we will buy tokens from sellers and sell to buyers at an attractive price, supporting the market and protecting it from collapses.
-            The price of tokens will be determined by a mathematical algorithm based on real supply and demand protecting the market from bloated volumes and price manipulations.
-            To replenish the project's assets, a utility-stable MMT token backed by leading cryptocurrencies will be issued.
-          </p>
           <div class="token__schedule-cripto">
-            <img class="token__img" src="img/schedule/gr-3.png" width="1047px" height="316px" alt="cripto schedule">
+            <img class="token__img" src="img/schedule/pic-mobile.png" width="240px" height="602px" alt="cripto schedule">
+          </div>
+          <div class="token__text-box">
+            <p class="token__text">Every day we will buy tokens from sellers and sell to buyers at an attractive price, supporting the market and protecting it from collapses.
+            <p class="token__text token__text-mod">The price of tokens will be determined by a mathematical algorithm based on real supply and demand protecting the market from bloated volumes and price manipulations.</p>
+            <p class="token__text token__text-mod"> To replenish the project's assets, a utility-stable MMT token backed by leading cryptocurrencies will be issued.</p>
+            </p>
           </div>
           <div class="token__schedule-many">
-            <img class="token__img" src="img/schedule/gr-4.png" width="1047px" height="408px" alt="many schedule">
+            <img class="token__img" src="img/schedule/eng-chart-mob.png" width="240px" height="137px" alt="many schedule">
           </div>
-        </div>
-      </div>
-      <div class="token__info">
-        <div class="container-internal">
-          <div class="token__info-box-top">
-            <span class="token__info-decor">60%</span>
-            <p class="token__info-text">of the income from the spread, we will send to the project's asset portfolio and do additional emission of tokens to maintain balance.
-              MMT number = Portfolio.</p>
-          </div>
-          <div class="token__info-box-bottom">
-            <p class="token__info-text">All additionally issued MMT tokens will be sent by the holder our tokens. Every 6 months will be launched Smart Contract, which allows you to exchange MMT tokens for cryptocurrency of our portfolio.</p>
+          <div class="token__schedule-many">
+            <img class="token__img-pipes" src="img/schedule/eng-chart-mob-2.png" width="240px" height="281px" alt="many schedule">
           </div>
         </div>
       </div>
     </section>
+    <section class="token__info">
+        <div class="container">
+          <div class="token__info-box-top">
+            <span class="token__info-decor">60%</span>
+            <p class="token__info-text">of the income from the spread, we will send to the project's asset portfolio and do additional emission of tokens to maintain balance.</p>
+              <p class="token__info-text token__info-text-mod">MMT number = Portfolio.</p>
+          </div>
+          <div class="token__info-box-bottom">
+            <p class="token__info-text token__info-text-mod">All additionally issued MMT tokens will be sent by the holder our tokens.</p>
+            <p class="token__info-text token__info-text-mod">Every 6 months will be launched Smart Contract, which allows you to exchange MMT tokens for cryptocurrency of our portfolio.</p>
+          </div>
+        </div>
+    </section>
     <section class="map">
-      <div class="container-internal">
-        <h2 class="map__heading global__heading">MMT development map</h2>
-        <img class="map__img" src="img/schedule/map.png" width="1063px" height="263px" alt="MMT development map">
+      <div class="container">
+        <h2 class="map__heading global__header-external">MMT development map</h2>
+        <img class="map__img" src="img/schedule/Conent.png" width="240px" height="885px" alt="MMT development map">
       </div>
     </section>
     <section class="team">
-      <h2 class="team__heading global__heading">Project team</h2>
-      <div class="container-internal">
+      <h2 class="team__heading global__header-external">Team</h2>
+      <div class="container">
         <ul class="team__list">
           <li class="team__item">
             <div class="team__element">
-              <img class="team__img" src="img/team/anton-efimenko.png" width="290px" height="290px" alt="Anton Efimenko Founder/СЕО">
+              <img class="team__img" src="img/team/team-mobile/anton-efimenko-mobile.png" width="240px" height="240px" alt="Anton Efimenko Founder/СЕО">
               <p class="team__name">Anton Efimenko</p>
               <p class="team__position">Founder/СЕО</p>
             </div>
           </li>
           <li class="team__item">
             <div class="team__element">
-              <img class="team__img" src="img/team/anton-vasiliev.png" width="290px" height="290px" alt="Anton-Vasiliev Vice president">
-              <p class="team__name">Anton-Vasiliev</p>
+              <img class="team__img" src="img/team/team-mobile/anton-vasiliev-mobile.png" width="240px" height="240px" alt="Anton-Vasiliev Vice president">
+              <p class="team__name">Anton Vasiliev</p>
               <p class="team__position">Vice president</p>
             </div>
           </li>
           <li class="team__item">
             <div class="team__element">
-              <img class="team__img" src="img/team/daria-sverdlova.png" width="290px" height="290px" alt="Daria-Sverdlova Creative director">
-              <p class="team__name">Daria-Sverdlova</p>
+              <img class="team__img" src="img/team/team-mobile/daria-sverdlova-mobile.png" width="240px" height="240px" alt="Daria-Sverdlova Creative director">
+              <p class="team__name">Daria Sverdlova</p>
               <p class="team__position">Creative director</p>
             </div>
           </li>
           <li class="team__item">
             <div class="team__element">
-              <img class="team__img" src="img/team/andrey-melentyev.png" width="290px" height="290px" alt="Andrey Melentyev PR director">
+              <img class="team__img" src="img/team/team-mobile/andrey-melentyev-mobile.png" width="240px" height="240px" alt="Andrey Melentyev PR director">
               <p class="team__name">Andrey Melentyev</p>
-              <p class="team__position">PR director</p>
+              <p class="team__position">PR/Marketing director</p>
             </div>
           </li>
           <li class="team__item">
             <div class="team__element">
-              <img class="team__img" src="img/team/maxim-baikevich.png" width="290px" height="290px" alt="Maxim Baikevich Frontend developer">
+              <img class="team__img" src="img/team/team-mobile/maxim-baikevich-mobile.png" width="240px" height="240px" alt="Maxim Baikevich Frontend developer">
               <p class="team__name">Maxim Baikevich</p>
               <p class="team__position">Frontend developer</p>
             </div>
           </li>
           <li class="team__item">
             <div class="team__element">
-              <img class="team__img" src="img/team/roman-kraevoi.png" width="290px" height="290px" alt="Roman Kraevoi Designer">
-              <p class="team__name">Roman Kraevoi</p>
-              <p class="team__position">Designer</p>
+              <img class="team__img" src="img/team/team-mobile/angelica-semenova-mobile.png" width="240px" height="240px" alt="Angelica Semenova Chief Information Officer">
+              <p class="team__name">Angelica Semenova</p>
+              <p class="team__position">Chief information oficer</p>
             </div>
           </li>
           <li class="team__item">
             <div class="team__element">
-              <img class="team__img" src="img/team/angelica-semenova.png" width="290px" height="290px" alt="Angelica Semenova Chief Information Officer">
-              <p class="team__name">Angelica Semenova</p>
-              <p class="team__position">Chief Information Officer</p>
+              <img class="team__img" src="img/team/team-mobile/roman-kraevoi-mobile.png" width="240px" height="240px" alt="Roman Kraevoi Designer">
+              <p class="team__name">Roman Kraevoi</p>
+              <p class="team__position">Designer</p>
             </div>
           </li>
         </ul>
@@ -326,79 +307,169 @@
         <ul class="partners__list">
           <li class="partners__item">
             <a class="partners__link" href="#">
-              <svg class="partners__icon svg__huobi-icon" width="99" height="129"><use xlink:href="#huobi"></use></svg>
+              <svg class="partners__icon svg__huobi-icon" width="50" height="65"><use xlink:href="#huobi"></use></svg>
             </a>
           </li>
           <li class="partners__item">
             <a class="partners__link" href="#">
-              <svg class="partners__icon bitfinex-icon" width="104" height="122"><use xlink:href="#binance"></use></svg>
+              <svg class="partners__icon bitfinex-icon" width="55" height="65"><use xlink:href="#binance"></use></svg>
             </a>
           </li>
           <li class="partners__item">
             <a class="partners__link" href="#">
-              <svg class="partners__iconbinance-icon" width="110" height="129"><use xlink:href="#eth"></use></svg>
+              <svg class="partners__iconbinance-icon" width="46" height="65"><use xlink:href="#eth"></use></svg>
             </a>
           </li>
           <li class="partners__item">
             <a class="partners__link" href="#">
-              <svg class="partners__eth-icon" width="91" height="129"><use xlink:href="#bitfinex"></use></svg>
+              <svg class="partners__eth-icon" width="55" height="65"><use xlink:href="#bitfinex"></use></svg>
             </a>
           </li>
           <li class="partners__item">
             <a class="partners__link" href="#">
-              <svg class="partners__gemini-icon" width="109" height="129"><use xlink:href="#gemini"></use></svg>
+              <svg class="partners__gemini-icon" width="55" height="65"><use xlink:href="#gemini"></use></svg>
             </a>
           </li>
           <li class="partners__item">
             <a class="partners__link" href="#">
-              <svg class="partners__tron-icon" width="139" height="130"><use xlink:href="#tron"></use></svg>
+              <svg class="partners__tron-icon" width="69" height="65"><use xlink:href="#tron"></use></svg>
             </a>
           </li>
           <li class="partners__item">
             <a class="partners__link" href="#">
-              <svg class="partners__genesis-mining-icon" width="84" height="130"><use xlink:href="#genesis-mining"></use></svg>
+              <svg class="partners__ibfs-icon" width="55" height="64"><use xlink:href="#ibfs"></use></svg>
             </a>
           </li>
           <li class="partners__item">
             <a class="partners__link" href="#">
-              <svg class="partners__ibfs-icon" width="109" height="128"><use xlink:href="#ibfs"></use></svg>
+              <svg class="partners__iota-icon" width="51" height="64"><use xlink:href="#iota"></use></svg>
             </a>
           </li>
           <li class="partners__item">
             <a class="partners__link" href="#">
-              <svg class="partners__iota-icon" width="103" height="130"><use xlink:href="#iota"></use></svg>
+              <svg class="partners__genesis-mining-icon" width="45" height="65"><use xlink:href="#genesis-mining"></use></svg>
             </a>
           </li>
           <li class="partners__item">
             <a class="partners__link" href="#">
-              <svg class="partners__stripes-icon" width="130" height="119"><use xlink:href="#stripes"></use></svg>
+              <svg class="partners__rbk-icon" width="95" height="50"><use xlink:href="#rbk"></use></svg>
             </a>
           </li>
           <li class="partners__item">
             <a class="partners__link" href="#">
-              <svg class="partners__drago-icon" width="134" height="119"><use xlink:href="#drago"></use></svg>
+              <svg class="partners__group-ib" width="78" height="31"><use xlink:href="#group-ib"></use></svg>
+            </a>
+          </li>
+          <li class="partners__item partners__item-drago-icon">
+            <a class="partners__link" href="#">
+              <svg class="partners__stripes-icon" width="70" height="64"><use xlink:href="#stripes"></use></svg>
             </a>
           </li>
           <li class="partners__item">
             <a class="partners__link" href="#">
-              <svg class="partners__rbk-icon" width="142" height="74"><use xlink:href="#rbk"></use></svg>
+              <svg class="partners__kaspersky" width="107" height="25"><use xlink:href="#kaspersky"></use></svg>
             </a>
           </li>
-          <li class="partners__item">
+          <li class="partners__item ">
             <a class="partners__link" href="#">
-              <svg class="partners__group-ib" width="147" height="59"><use xlink:href="#group-ib"></use></svg>
-            </a>
-          </li>
-          <li class="partners__item">
-            <a class="partners__link" href="#">
-              <svg class="partners__kaspersky" width="201" height="47"><use xlink:href="#kaspersky"></use></svg>
+              <svg class="partners__drago-icon" width="72" height="64"><use xlink:href="#drago"></use></svg>
             </a>
           </li>
         </ul>
       </div>
     </section>
   </main>
-  <footer>
+  <footer class="page-footer">
+    <div class="page-footer__wrapper">
+      <section class="information">
+        <div class="container">
+          <h2 class="information__heading global__header-external">Information</h2>
+          <ul class="information__list">
+            <li class="information__item">
+              <a class="information__link" href="#">White Paper</a>
+            </li>
+            <li class="information__item">
+              <a class="information__link" href="#">Token sale agreement</a>
+            </li>
+            <li class="information__item">
+              <a class="information__link" href="#">Terms of use</a>
+            </li>
+            <li class="information__item">
+              <a class="information__link" href="#">Privacy policy</a>
+            </li>
+            <li class="information__item">
+              <a class="information__link" href="#">KYC/AML policy</a>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section class="contacts">
+        <div class="container">
+          <h2 class="contacts__heading global__header-external">Contacts</h2>
+          <ul class="contacts__list">
+            <li class="contacts__item">
+              <a class="contacts__link" href="#">ceo@mmtech.io</a>
+            </li>
+            <li class="contacts__item">
+              <a class="contacts__link" href="#">pr@mmtech.io</a>
+            </li>
+          </ul>
+        </div>
+      </section>
+    </div>
+    <section class="footer-social">
+      <div class="container">
+        <h2 class="visually-hidden">social networks</h2>
+        <ul class="footer-social__list">
+          <li class="footer-social__item">
+            <a class="footer-social__link" href="#">
+              <span class="visually-hidden">Facebook</span>
+            </a>
+          </li>
+          <li class="footer-social__item">
+            <a class="footer-social__link" href="#">
+              <span class="visually-hidden">Facebook</span>
+            </a>
+          </li>
+          <li class="footer-social__item">
+            <a class="footer-social__link" href="#">
+              <span class="visually-hidden">Facebook</span>
+            </a>
+          </li>
+          <li class="footer-social__item">
+            <a class="footer-social__link" href="#">
+              <span class="visually-hidden">Facebook</span>
+            </a>
+          </li>
+    </section>
+  </footer>
+  <script>
+    var navMain = document.querySelector('.main-nav');
+    var navToggle = document.querySelector('.main-nav__toggle');
+    var navSaitList = document.querySelector('.sait-list');
+    var mainImg = document.querySelector('.main-nav__img');
 
+    navToggle.addEventListener('click', function() {
+      if (navMain.classList.contains('main-nav--closed')) {
+        navMain.classList.remove('main-nav--closed');
+        navMain.classList.add('main-nav--opened');
+        navSaitList.classList.remove('sait-list__off');
+        navSaitList.classList.add('sait-list__on');
+        navSaitList.classList.remove('main-nav__img');
+        navSaitList.classList.add('main-nav__img--mod');
+        mainImg.classList.remove('main-nav__img');
+        mainImg.classList.add('sait-list__off');
+      } else {
+      navMain.classList.add('main-nav--closed');
+      navMain.classList.remove('main-nav--opened');
+      navSaitList.classList.remove('sait-list__on');
+      navSaitList.classList.add('sait-list__off');
+      navSaitList.classList.remove('main-nav__img--mod');
+      navSaitList.classList.add('main-nav__img--mod');
+      mainImg.classList.remove('sait-list__off');
+      mainImg.classList.add('main-nav__img');
+    }
+    });
+  </script>
 </body>
 </html>

@@ -1,0 +1,36 @@
+.services__text {
+  display: none;
+}
+
+.services {
+  background-color: @top-color;
+  padding-top: 28px;
+  padding-bottom: 29px;
+  margin-bottom: 40px;
+}
+
+.services__box {
+  width: 220px;
+  padding-left: 20px;
+}
+
+.services__heading {
+  position: relative;
+  margin-bottom: 31px;
+  line-height: 27px;
+}
+
+.services__heading--mod {
+  margin-bottom: 0;
+}
+
+.services__heading::before {
+  position: absolute;
+  content: "";
+  background-color: @top-color;
+  left: -18px;
+  top: 10px;
+  border: 5px solid transparent;
+  border-left: 8px solid #E5E5E5;
+
+}

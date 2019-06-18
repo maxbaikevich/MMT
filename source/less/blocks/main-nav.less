@@ -1,3 +1,86 @@
 .main-nav {
+  margin-top: 19px;
+  margin-bottom: 13px;
   display: flex;
+
+
+}
+.main-nav__link {
+  margin: 0;
+  padding: 0;
+  z-index: 3;
+  background-image: url("../img/logo/logo-white.png");
+  background-repeat: no-repeat;
+  width: 62px;
+  height: 22px;
+}
+
+
+.main-nav__toggle {
+  position: relative;
+  top: -7px;
+  left: 150px;
+  display: block;
+  width: 36px;
+  height: 30px;
+  z-index: 5;
+  background-color: transparent;
+  cursor: pointer;
+  border: none;
+}
+.main-nav--closed .main-nav__toggle::before {
+  content: "";
+  position: absolute;
+  top: 10px;
+  left: -10px;
+  width: 36px;
+  height: 2px;
+  background-color: #C4C4C4;
+  box-shadow: 0 8px 0 0 #C4C4C4, 0 16px 0 0 #C4C4C4;
+}
+
+.main-nav--closed .main-nav__toggle:hover::before {
+  background-color: rgb(53, 53, 89);
+  box-shadow: 0 8px 0 0 rgb(53, 53,89), 0 16px 0 0 rgb(53, 53, 89);
+}
+
+.main-nav--closed .main-nav__toggle:active::before {
+  background-color: rgb(196, 196, 196);
+  box-shadow: 0 8px 0 0 rgb(196, 196, 196), 0 16px 0 0 rgb(196, 196, 196);
+}
+
+.main-nav--opened .main-nav__toggle {
+  top: 0;
+  right: auto;
+  left: 160px;
+
+  &::before,
+  &::after {
+    content: "";
+    position: absolute;
+    top: 10px;
+    left: -15px;
+    width: 36px;
+    height: 2px;
+    background-color: #ffffff;
+  }
+
+  &::before {
+    transform: rotate(45deg);
+    box-shadow: none;
+  }
+
+  &::after {
+    transform: rotate(-45deg);
+  }
+
+  &:hover::before,
+  &:hover::after {
+    background-color: rgb(53, 53, 89);
+  }
+
+  &:active::before,
+  &:active::after {
+    background-color: rgb(196, 196, 196);
+  }
 }

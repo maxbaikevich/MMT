@@ -1,11 +1,57 @@
 .sait-list {
   .site-rezet();
-  width: 1234px;
+  width: 100%;
   display: flex;
   justify-content: space-around;
+  display: block;
+  position: absolute;
+  top: 0px;
+  left: 0;
+  background-color: @header-color;
+  z-index: 2;
+  padding-top: 72px;
+  padding-bottom: 0px;
+  box-sizing: border-box;
+  text-align: center;
+
 }
 
 .sait-list__link {
   text-decoration: none;
-  color: @top-color;
+  color: #ffffff;
+  display: block;
+  font-size: 18px;
+
+  &:hover {
+    color:@top-color;
+  }
+
+  &:active {
+    color:#EE7C95;
+  }
+}
+
+.sait-list__item {
+  padding-bottom: 12px;
+  padding-top: 12px;
+  border-bottom: 0.5px solid #B31C3D;
+}
+
+.sait-list__on {
+  display: block;
+}
+
+.sait-list__off {
+  display: none;
+}
+
+.siit-list__langvich {
+  display: flex;
+  justify-content: center;
+  color: #ffffff;
+  margin: 0;
+
+}
+.sait-list__link--active {
+  border-bottom: 2px solid #ffffff;
 }
