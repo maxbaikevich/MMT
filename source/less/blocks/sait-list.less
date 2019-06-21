@@ -55,3 +55,58 @@
 .sait-list__link--active {
   border-bottom: 2px solid #ffffff;
 }
+
+@media (min-width: @desktop) {
+  .sait-list__off {
+    display: block;
+  }
+
+  .sait-list {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  display: block;
+  position: relative;
+  top: 0px;
+  left: 0;
+  background-color: transparent;
+  z-index: 0;
+  padding-top: 0px;
+  padding-bottom: 0px;
+  margin-left: 40px;
+  box-sizing: border-box;
+  text-align: none;
+  }
+
+  .sait-list__link {
+    text-decoration: none;
+    color: @top-color;
+    display: block;
+    font-size: 18px;
+  }
+
+  .sait-list__link--desktop {
+    text-transform: uppercase;
+    color: #aaaaaa;
+  }
+
+  .sait-list__item {
+    padding-bottom: 12px;
+    padding-top: 12px;
+    border-bottom: none;
+  }
+
+  .sait-list__item--mod {
+    display: flex;
+  }
+
+  .siit-list__langvich {
+    color: @top-color;
+  }
+
+  .sait-list__link--active {
+    border-bottom: none;
+    color: @header-color;
+  }
+
+}

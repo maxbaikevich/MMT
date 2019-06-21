@@ -25,7 +25,7 @@
   align-items: center;
   position: absolute;
   bottom: -50px;
-  width: 280px;
+  width: 190px;
   margin-left: 90px;
   font-size: 0;
 }
@@ -40,4 +40,20 @@
 #product-2:checked ~ .slider__controls .slider__controls-item[for="product-2"],
 #product-3:checked ~ .slider__controls .slider__controls-item[for="product-3"] {
   background-color: #d52149;
+}
+
+@media (min-width: @desktop) {
+  .slider__element {
+    width: 580px;
+    height: 350px;
+  }
+
+  .slider__list {
+    margin-left: 305px;
+  }
+
+  .slider__controls {
+    margin-left: 560px;
+  }
+
 }
