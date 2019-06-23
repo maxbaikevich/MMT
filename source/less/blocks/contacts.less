@@ -11,3 +11,37 @@ margin-top: 22px;
 .contacts__item {
   margin-bottom: 12px;
 }
+.contacts__wrap {
+  margin-bottom: 24px;
+}
+@media (min-width: @desktop) {
+ .contacts__heading {
+  text-align: left;
+  }
+  .contacts {
+    margin-left: -60px;
+  }
+  .contacts__link {
+    font-size: 22px;
+    line-height: 50px;
+  }
+  .contacts__list {
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-top: 58px;
+  }
+  .contacts {
+    position: relative;
+  }
+  .contacts::before {
+    content: "";
+    position: absolute;
+    width: 1px;
+    height: 439px;
+    background-color: #e5e5e5;
+    left: 365px;
+    top: 12px;
+  }
+
+
+}

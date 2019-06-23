@@ -6,6 +6,8 @@
   <link rel="stylesheet" type="text/css" href="css/style.css">
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700|Oswald:400,500,700&display=swap" rel="stylesheet">
   <link rel="stylesheet" type="text/css" href="less/normalaiz.less">
+  <link rel="stylesheet" type="text/css" href="/slick/slick.css"/>
+  <link rel="stylesheet" type="text/css" href="/slick/slick-theme.css"/>
 </head>
   <svg style="display:none">
     <symbol  viewBox="0 0 481.95 565.62" id ="bitfinex"><defs><style>.cls-1{fill:#3e3f5d;fill-rule:evenodd;}</style></defs><title> 915621680</title><g id="Слой_2" data-name="Слой 2"><g id="Слой_1-2" data-name="Слой 1"><g id="_915621680" data-name=" 915621680"><path id="Path-1-Copy-9" class="cls-1" d="M18.24,409.72C40.46,433.25,162.52,546,354.11,415.14,492.65,307.25,489.19,73.34,475.88,2.71,471.24,13,310.33,365.37,18.24,409.72ZM475.86,2.65c-1.7-.7-179.93-25-356.13,88.48C10.31,161.61-4.15,264.75.84,333.47,257,304.81,470.05,10.73,475.86,2.65Z"/><path id="BITFINEX-Copy-3" class="cls-1" d="M56.6,558.42H34v-12H56.6c5.66,0,8.55,2.7,8.55,6.21s-2.83,5.84-8.55,5.84Zm-.74-18.51H34V529.76h21.9c6,0,8.3,2.09,8.3,5,0,2.65-2.7,5.17-8.3,5.17ZM61.64,543c9.53-.3,13-5,13-10.21,0-5.66-4.49-10.33-15.44-10.33h-35v43.18H60.23c9,0,15.68-3.75,15.68-11.81,0-5.72-3.75-10.58-14.27-10.83Zm25.82-20.54v43.18h9.78V522.44Zm49.45,8.18h21.52v-8.18H105.6v8.18h21.53v35h9.78Zm29.88-8.18v43.18h9.78V548.77h22.94v-7.08H176.57V529.88h37.27v-7.44Zm55,0v43.18h9.78V522.44ZM254.48,533l32.42,32.66H298V522.44h-9.66v31.12l-31.12-31.12H244.76v43.18h9.72Zm56.7-10.52v43.18H359v-7.26H321V546.49h22.82v-6.71H321v-9.9H359v-7.44Zm113.36,0H411.62l-16.49,15.19-16.36-15.19h-13.1l23,21.28-23.86,21.9h12.92L395,549.69l17.22,15.93H425.4l-23.93-22Z"/></g></g></g>
@@ -129,7 +131,7 @@
         <div class="services__grid">
           <div class="services__box">
             <h3 class="services__heading global__internal-header">We sell tokens when market not have sellers</h3>
-            <p class="services__text global-text">We help investors buy large amounts of tokens without overclocking. You can always enter the market with a large volume and not split up the position into lots.
+            <p class="services__text global-text">We help investors buy large<br> amounts of tokens without overclocking. You can always enter the market with a large volume and not split up the position into lots.
             </p>
           </div>
           <div class="services__box">
@@ -142,30 +144,36 @@
           </div>
           <div class="services__box">
             <h3 class="services__heading global__internal-header">We form the market</h3>
-            <p class="services__text global-text">We set quotes for both purchase and sale. You can make deals with us in both small and high volumes.</p>
-          </div>
-          <div class="services__box">
-            <h3 class="services__heading global__internal-header">We making the market liquid</h3>
             <p class="services__text global-text">We analyze the real supply and demand, and then, on the basis of the analysis, set quotes. You always see the market price, protected from manipulation and PUMP.</p>
           </div>
           <div class="services__box">
-            <h3 class="services__heading services__heading--mod global__internal-header">We provide counter quotes</h3>
+            <h3 class="services__heading global__internal-header">We making the market liquid</h3>
             <p class="services__text global-text">We give investors the opportunity to implement their strategies at any time and in any amount.</p>
+          </div>
+          <div class="services__box">
+            <h3 class="services__heading services__heading--mod global__internal-header">We provide counter quotes</h3>
+            <p class="services__text global-text">We set quotes for both purchase and sale. You can make deals with us in both small and high volumes.</p>
           </div>
         </div>
       </div>
     </section>
     <section class="comparison">
-      <h2 class="comparison__heading global__header-external">We know what we are doing</h2>
+      <h2 class="comparison__heading global__header-external">How we do it</h2>
       <div class="container">
         <div class="comparison__wrapper">
           <div class="comparison__box comparison__left">
             <h3 class="comparison__heading-internal global__internal-header">Without MMT</h3>
-            <img class="comparison__img-left" src="img/schedule/chart-no-eng-mobile.png" width="240px" height="205px" alt="schedule without MMT">
+            <picture>
+              <source class="comparison__img-left" media="(min-width:1440px)" srcset="img/schedule/chart-no-eng-desktop@1x.png">
+              <img class="comparison__img-left" src="img/schedule/chart-no-eng-mobile.png" width="240px" height="205px" alt="schedule without MMT">
+            </picture>
           </div>
           <div class="comparison__box comparison__box-right  comparison__right">
-            <h3 class="comparison__heading-internal global__internal-header">Without MMT</h3>
-            <img class="comparison__img-right" src="img/schedule/chart-mmt-eng-mobile.png" width="240px" height="195px" alt="schedule without MMT">
+            <h3 class="comparison__heading-internal global__internal-header">With MMT</h3>
+            <picture>
+              <source class="comparison__img-right" media="(min-width:1440px)" srcset="img/schedule/chart-mmt-eng-desktop-2@1x.png">
+              <img class="comparison__img-right" src="img/schedule/chart-mmt-eng-mobile.png" width="240px" height="195px" alt="schedule without MMT">
+            </picture>
           </div>
         </div>
       </div>
@@ -177,14 +185,17 @@
           <div class="advantages__wrapper">
             <div class="advantages__box">
               <h3 class="advantages__hedline global__internal-header">Protection</h3>
-              <img class="advantages__img" src="img/schedule/protection-mobile.jpg" width="240px" height="240px" alt="Protection">
+              <picture>
+              <source class="advantages__img" media="(min-width:1440px)" srcset="img/schedule/protection-desktop@1x.jpg">
+                <img class="advantages__img" src="img/schedule/protection-mobile.jpg" width="240px" height="240px" alt="Protection">
+              </picture>
               <ul class="advantages__list-protection">
-                <li class="advantages__list-item">fraud <span class="advantages__list-element">(PUMP, price overclocking, trading volume overclocking)</span></li>
+                <li class="advantages__list-item">fraud <span class="advantages__list-element">(PUMP, price overclocking,<br> trading volume overclocking)</span></li>
                 <li class="advantages__list-item">volatility <span class="advantages__list-element">(panic fall, unreasonable price increase)</span></li>
                 <li class="advantages__list-item">manipulation <span class="advantages__list-element">(collapse of a small lot in the "night" session of the trade)</span></li>
               </ul>
             </div>
-            <div class="advantages__box">
+            <div class="advantages__box advantages__box--margin">
               <h3 class="advantages__hedline global__internal-header">Stability</h3>
               <img class="advantages__img" src="img/schedule/stability-mobile.jpg" width="240px" height="240px" alt="Stability">
               <ul class="advantages__list-protection">
@@ -195,10 +206,10 @@
                 <li class="advantages__list-item">real price</li>
               </ul>
             </div>
-            <div class="advantages__box">
+            <div class="advantages__box advantages__box--mod">
               <h3 class="advantages__hedline global__internal-header">Hedging</h3>
               <img class="advantages__img" src="img/schedule/Hedging-mobile.jpg" width="240px" height="240px" alt="Hedging">
-              <ul class="advantages__list-protection">
+              <ul class="advantages__list-protection advantages__list-protection--mod">
                 <li class="advantages__list-item">reduction of losses<span class="advantages__list-element">in case of falling prices of leading cryptocurrencies</span></li>
                 <li class="advantages__list-item">alternative to storing cryptocurrency</li>
                 <li class="advantages__list-item"><span class="advantages__list-element">contribution to the</span> development of the entire market</li>
@@ -213,16 +224,22 @@
         <h2 class="token__hedline global__header-external">Token MMT</h2>
         <div class="token__wrapper">
           <div class="token__schedule-cripto">
-            <img class="token__img" src="img/schedule/pic-mobile.png" width="240px" height="602px" alt="cripto schedule">
+            <picture>
+              <source class="token__img" media="(min-width:1200px)" srcset="img/schedule/token-pic-desktop@1x.png">
+              <img class="token__img" src="img/schedule/pic-mobile.png" width="240px" height="602px" alt="cripto schedule">
+            </picture>
           </div>
           <div class="token__text-box">
             <p class="token__text">Every day we will buy tokens from sellers and sell to buyers at an attractive price, supporting the market and protecting it from collapses.
-            <p class="token__text token__text-mod">The price of tokens will be determined by a mathematical algorithm based on real supply and demand protecting the market from bloated volumes and price manipulations.</p>
-            <p class="token__text token__text-mod"> To replenish the project's assets, a utility-stable MMT token backed by leading cryptocurrencies will be issued.</p>
+            <span class="token__text token__text-mod">The price of tokens will be determined by a mathematical algorithm based on real supply and demand protecting the market from bloated volumes and price manipulations.</span>
+            <span class="token__text token__text--margin token__text-mod"> To replenish the project's assets, a utility-stable MMT token backed by leading cryptocurrencies will be issued.</span>
             </p>
           </div>
-          <div class="token__schedule-many">
-            <img class="token__img" src="img/schedule/eng-chart-mob.png" width="240px" height="137px" alt="many schedule">
+          <div class="token__schedule-many-box">
+            <picture>
+              <source class="token__img"  media="(min-width:1200px)" srcset="img/schedule/token-chart-rus-desktop@1x.png">
+            <img class="token__img--mod" src="img/schedule/eng-chart-mob.png" width="240px" height="137px" alt="many schedule">
+          </picture>
           </div>
           <div class="token__schedule-many">
             <img class="token__img-pipes" src="img/schedule/eng-chart-mob-2.png" width="240px" height="281px" alt="many schedule">
@@ -232,72 +249,184 @@
     </section>
     <section class="token__info">
         <div class="container">
-          <div class="token__info-box-top">
-            <span class="token__info-decor">60%</span>
-            <p class="token__info-text">of the income from the spread, we will send to the project's asset portfolio and do additional emission of tokens to maintain balance.</p>
-              <p class="token__info-text token__info-text-mod">MMT number = Portfolio.</p>
-          </div>
-          <div class="token__info-box-bottom">
-            <p class="token__info-text token__info-text-mod">All additionally issued MMT tokens will be sent by the holder our tokens.</p>
-            <p class="token__info-text token__info-text-mod">Every 6 months will be launched Smart Contract, which allows you to exchange MMT tokens for cryptocurrency of our portfolio.</p>
+          <div class="token__info-wrapper">
+            <div class="token__info-box-top">
+              <span class="token__info-decor">60%</span>
+              <p class="token__info-text">of the income from the spread, we will send to the project's asset portfolio and do additional emission of tokens to maintain balance.</p>
+                <p class="token__info-text token__info-text-mod">MMT number = Portfolio.</p>
+            </div>
+            <div class="token__info-box-bottom">
+              <p class="token__info-text token__info-text-mod">All additionally issued MMT tokens will be sent by the holder our tokens.
+              <span class="token__info-text token__info-text-mod--desktop">Every 6 months will be launched Smart Contract, which allows you to exchange MMT tokens for cryptocurrency of our portfolio.</span>
+            </div>
           </div>
         </div>
     </section>
     <section class="map">
       <div class="container">
-        <h2 class="map__heading global__header-external">MMT development map</h2>
-        <img class="map__img" src="img/schedule/Conent.png" width="240px" height="885px" alt="MMT development map">
+        <div class="map__wrapper">
+          <h2 class="map__heading global__header-external">MMT development map</h2>
+          <img class="map__img" src="img/schedule/Conent.png" width="240px" height="885px" alt="MMT development map">
+        </div>
+        <div class="map-desktop">
+          <ul class="map-desktop__list">
+            <li class="map-desktop__items">
+              <div class="map-desktop__items-box">
+                <p class="map-desktop__year map-desktop__year--top-position">4q2017</p>
+                <div class="map-desktop__items-block"><span class="map-desktop__number">1</span></div>
+                <p class="map-desktop__items-text map-desktop__items-text--top">Formation.Collection <br>of market<br> information.</p>
+              </div>
+            </li>
+            <li class="map-desktop__items">
+              <div class="map-desktop__items-box">
+                <div class="map-desktop__items-block"><span class="map-desktop__number">2</span></div>
+                <p class="map-desktop__year map-desktop__year--bottom-position">1Q2018</p>
+                <p class="map-desktop__items-text map-desktop__items-text--bottom">Development of trading strategies and algorithms in a falling market.</p>
+              </div>
+            </li>
+            <li class="map-desktop__items">
+              <div class="map-desktop__items-box">
+                <p class="map-desktop__year map-desktop__year--top-position">3Q2018</p>
+                <div class="map-desktop__items-block"><span class="map-desktop__number">3</span></div>
+                <p class="map-desktop__items-text map-desktop__items-text--top">Writing ideas in WP, search for strategic partners and investors.</p>
+              </div>
+            </li>
+            <li class="map-desktop__items">
+              <div class="map-desktop__items-box">
+                <div class="map-desktop__items-block"><span class="map-desktop__number">4</span></div>
+                <p class="map-desktop__year map-desktop__year--bottom-position">4Q2018</p>
+                <p class="map-desktop__items-text map-desktop__items-text--bottom">Team building and external partners.</p>
+              </div>
+            </li>
+            <li class="map-desktop__items">
+              <div class="map-desktop__items-box">
+                <p class="map-desktop__year map-desktop__year--top-position">1Q2019</p>
+                <div class="map-desktop__items-block"><span class="map-desktop__number">5</span></div>
+                <p class="map-desktop__items-text map-desktop__items-text--top">Token model development.</p>
+              </div>
+            </li>
+            <li class="map-desktop__items">
+              <div class="map-desktop__items-box">
+                <div class="map-desktop__items-block"><span class="map-desktop__number">6</span></div>
+                <p class="map-desktop__year map-desktop__year--bottom-position">2Q2019</p>
+                <p class="map-desktop__items-text map-desktop__items-text--bottom">Release ICO and Pre-ICO tokens. Launching platform development.</p>
+              </div>
+            </li>
+            <li class="map-desktop__items">
+              <div class="map-desktop__items-box">
+                <p class="map-desktop__year map-desktop__year--top-position">3Q2019</p>
+                <div class="map-desktop__items-block"><span class="map-desktop__number">7</span></div>
+                <p class="map-desktop__items-text map-desktop__items-text--top">Placement of tokens on the exchange.</p>
+              </div>
+            </li>
+            <li class="map-desktop__items">
+              <div class="map-desktop__items-box">
+                <div class="map-desktop__items-block"><span class="map-desktop__number">8</span></div>
+                <p class="map-desktop__year map-desktop__year--bottom-position">3Q2019</p>
+                <p class="map-desktop__items-text map-desktop__items-text--bottom">Initial stage of work.</p>
+              </div>
+            </li>
+            <li class="map-desktop__items">
+              <div class="map-desktop__items-box">
+                <p class="map-desktop__year map-desktop__year--top-position">3Q2019</p>
+                <div class="map-desktop__items-block"><span class="map-desktop__number">9</span></div>
+                <p class="map-desktop__items-text map-desktop__items-text--top">Starting reporting systems. First reports.</p>
+              </div>
+            </li>
+            <li class="map-desktop__items">
+              <div class="map-desktop__items-box">
+                <div class="map-desktop__items-block"><span class="map-desktop__number">10</span></div>
+                <p class="map-desktop__year map-desktop__year--bottom-position">4Q2019</p>
+                <p class="map-desktop__items-text map-desktop__items-text--bottom">Deep analysis of the trading systems</p>
+              </div>
+            </li>
+            <li class="map-desktop__items">
+              <div class="map-desktop__items-box">
+                <p class="map-desktop__year map-desktop__year--top-position">1Q2020</p>
+                <div class="map-desktop__items-block"><span class="map-desktop__number">11</span></div>
+                <p class="map-desktop__items-text map-desktop__items-text--top">Annual report.</p>
+              </div>
+            </li>
+            <li class="map-desktop__items">
+              <div class="map-desktop__items-box">
+                <div class="map-desktop__items-block"><span class="map-desktop__number">12</span></div>
+                <p class="map-desktop__year map-desktop__year--bottom-position">2Q2020</p>
+                <p class="map-desktop__items-text map-desktop__items-text--bottom">Transition to full automated trading.</p>
+              </div>
+            </li>
+            <li class="map-desktop__items">
+              <div class="map-desktop__items-box">
+                <p class="map-desktop__year map-desktop__year--top-position">3Q2020</p>
+                <div class="map-desktop__items-block"><span class="map-desktop__number">13</span></div>
+                <p class="map-desktop__items-text map-desktop__items-text--top">Semi-annual report. Plans and strategies for the next 2 years.</p>
+              </div>
+            </li>
+            <li class="map-desktop__items map-desktop__items--mod">
+              <div class="map-desktop__items-box">
+                <div class="map-desktop__items-block"><span class="map-desktop__number">14</span></div>
+                <p class="map-desktop__year map-desktop__year--bottom-position">4Q2020</p>
+                <p class="map-desktop__items-text map-desktop__items-text--bottom">Full project automation.</p>
+              </div>
+            </li>
+          </ul>
+        </div>
       </div>
     </section>
     <section class="team">
-      <h2 class="team__heading global__header-external">Team</h2>
+      <h2 class="team__heading global__header-external">Project team</h2>
       <div class="container">
         <ul class="team__list">
           <li class="team__item">
             <div class="team__element">
-              <img class="team__img" src="img/team/team-mobile/anton-efimenko-mobile.png" width="240px" height="240px" alt="Anton Efimenko Founder/СЕО">
+              <picture>
+                <source class="team__img" media="(min-width:1200px)" srcset="img/team/anton-efimenko-desktop.png">
+                <img class="team__img" src="img/team/anton-efimenko-mobile.png" width="240px" height="240px" alt="Anton Efimenko Founder/СЕО">
+              </picture>
               <p class="team__name">Anton Efimenko</p>
               <p class="team__position">Founder/СЕО</p>
             </div>
           </li>
           <li class="team__item">
             <div class="team__element">
-              <img class="team__img" src="img/team/team-mobile/anton-vasiliev-mobile.png" width="240px" height="240px" alt="Anton-Vasiliev Vice president">
+              <picture>
+                <source class="team__img" media="(min-width:1200px)" srcset="img/team/anton-vasiliev-desktop.png">
+                <img class="team__img" src="img/team/anton-vasiliev-mobile.png" width="240px" height="240px" alt="Anton-Vasiliev Vice president">
+              </picture>
               <p class="team__name">Anton Vasiliev</p>
               <p class="team__position">Vice president</p>
             </div>
           </li>
           <li class="team__item">
             <div class="team__element">
-              <img class="team__img" src="img/team/team-mobile/daria-sverdlova-mobile.png" width="240px" height="240px" alt="Daria-Sverdlova Creative director">
+              <img class="team__img" src="img/team/daria-sverdlova-mobile.png" width="240px" height="240px" alt="Daria-Sverdlova Creative director">
               <p class="team__name">Daria Sverdlova</p>
               <p class="team__position">Creative director</p>
             </div>
           </li>
           <li class="team__item">
             <div class="team__element">
-              <img class="team__img" src="img/team/team-mobile/andrey-melentyev-mobile.png" width="240px" height="240px" alt="Andrey Melentyev PR director">
+              <img class="team__img" src="img/team/andrey-melentyev-mobile.png" width="240px" height="240px" alt="Andrey Melentyev PR director">
               <p class="team__name">Andrey Melentyev</p>
               <p class="team__position">PR/Marketing director</p>
             </div>
           </li>
           <li class="team__item">
             <div class="team__element">
-              <img class="team__img" src="img/team/team-mobile/maxim-baikevich-mobile.png" width="240px" height="240px" alt="Maxim Baikevich Frontend developer">
+              <img class="team__img" src="img/team/maxim-baikevich-mobile.png" width="240px" height="240px" alt="Maxim Baikevich Frontend developer">
               <p class="team__name">Maxim Baikevich</p>
               <p class="team__position">Frontend developer</p>
             </div>
           </li>
           <li class="team__item">
             <div class="team__element">
-              <img class="team__img" src="img/team/team-mobile/angelica-semenova-mobile.png" width="240px" height="240px" alt="Angelica Semenova Chief Information Officer">
+              <img class="team__img" src="img/team/angelica-semenova-mobile.png" width="240px" height="240px" alt="Angelica Semenova Chief Information Officer">
               <p class="team__name">Angelica Semenova</p>
               <p class="team__position">Chief information oficer</p>
             </div>
           </li>
           <li class="team__item">
-            <div class="team__element">
-              <img class="team__img" src="img/team/team-mobile/roman-kraevoi-mobile.png" width="240px" height="240px" alt="Roman Kraevoi Designer">
+            <div class="team__element team__element--mod">
+              <img class="team__img" src="img/team/roman-kraevoi-mobile.png" width="240px" height="240px" alt="Roman Kraevoi Designer">
               <p class="team__name">Roman Kraevoi</p>
               <p class="team__position">Designer</p>
             </div>
@@ -311,17 +440,17 @@
         <ul class="partners__list">
           <li class="partners__item">
             <a class="partners__link" href="#">
-              <svg class="partners__icon svg__huobi-icon" width="50" height="65"><use xlink:href="#huobi"></use></svg>
+              <svg class="partners__huobi-icon" width="50" height="65"><use xlink:href="#huobi"></use></svg>
             </a>
           </li>
           <li class="partners__item">
             <a class="partners__link" href="#">
-              <svg class="partners__icon bitfinex-icon" width="55" height="65"><use xlink:href="#binance"></use></svg>
+              <svg class="partners__bitfinex-icon" width="55" height="65"><use xlink:href="#binance"></use></svg>
             </a>
           </li>
           <li class="partners__item">
             <a class="partners__link" href="#">
-              <svg class="partners__iconbinance-icon" width="46" height="65"><use xlink:href="#eth"></use></svg>
+              <svg class="partners__binance-icon" width="46" height="65"><use xlink:href="#eth"></use></svg>
             </a>
           </li>
           <li class="partners__item">
@@ -374,7 +503,7 @@
               <svg class="partners__kaspersky" width="107" height="25"><use xlink:href="#kaspersky"></use></svg>
             </a>
           </li>
-          <li class="partners__item ">
+          <li class="partners__item">
             <a class="partners__link" href="#">
               <svg class="partners__drago-icon" width="72" height="64"><use xlink:href="#drago"></use></svg>
             </a>
@@ -385,67 +514,93 @@
   </main>
   <footer class="page-footer">
     <div class="page-footer__wrapper">
-      <section class="information">
-        <div class="container">
-          <h2 class="information__heading global__header-external">Information</h2>
-          <ul class="information__list">
-            <li class="information__item">
-              <a class="information__link" href="#">White Paper</a>
-            </li>
-            <li class="information__item">
-              <a class="information__link" href="#">Token sale agreement</a>
-            </li>
-            <li class="information__item">
-              <a class="information__link" href="#">Terms of use</a>
-            </li>
-            <li class="information__item">
-              <a class="information__link" href="#">Privacy policy</a>
-            </li>
-            <li class="information__item">
-              <a class="information__link" href="#">KYC/AML policy</a>
-            </li>
-          </ul>
+      <div class="container-element__desktop">
+        <div class="page-footer__flex-wrapper">
+          <section class="information">
+            <div class="container-element">
+              <h2 class="information__heading global__header-external">Information</h2>
+              <ul class="information__list">
+                <li class="information__item">
+                  <a class="information__link" href="#">White Paper</a>
+                </li>
+                <li class="information__item">
+                  <a class="information__link" href="#">Token sale agreement</a>
+                </li>
+                <li class="information__item">
+                  <a class="information__link" href="#">Terms of use</a>
+                </li>
+                <li class="information__item">
+                  <a class="information__link" href="#">Privacy policy</a>
+                </li>
+                <li class="information__item">
+                  <a class="information__link" href="#">KYC/AML policy</a>
+                </li>
+              </ul>
+            </div>
+          </section>
+          <section class="contacts">
+            <div class="container-element">
+              <div class="contacts__wrap">
+                <h2 class="contacts__heading global__header-external">Contacts</h2>
+                <ul class="contacts__list">
+                  <li class="contacts__item">
+                    <a class="contacts__link" href="#">ceo@mmtech.io</a>
+                  </li>
+                  <li class="contacts__item">
+                    <a class="contacts__link" href="#">pr@mmtech.io</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </section>
+          <section class="footer-social">
+            <div class="footer-social__wrapper">
+              <div class="footer-social__contaiher-desktop">
+                <h2 class="visually-hidden">social networks</h2>
+                <ul class="footer-social__list">
+                  <li class="footer-social__item">
+                    <a class="footer-social__link" href="#">
+                      <picture>
+                        <source class="footer-social__img footer-social__img--mod" media="(min-width:1200px)" srcset="img/icon-social/fb-desktop.png">
+                        <img class="footer-social__img" src="img/icon-social/fb-pur-mobile@1x.png" width="80" height="80" alt="fb">
+                      </picture>
+                      <span class="visually-hidden">Facebook</span>
+                    </a>
+                  </li>
+                  <li class="footer-social__item">
+                    <a class="footer-social__link" href="#">
+                      <picture>
+                        <source class="footer-social__img footer-social__img--mod" media="(min-width:1200px)" srcset="img/icon-social/tw-desktop.png">
+                        <img class="footer-social__img" src="img/icon-social/tw-pur-mobile@1x.png" width="80" height="80" alt="tw">
+                      </picture>
+                      <span class="visually-hidden">Twitter</span>
+                    </a>
+                  </li>
+                  <li class="footer-social__item">
+                    <a class="footer-social__link" href="#">
+                      <picture>
+                        <source class="footer-social__img footer-social__img--mod" media="(min-width:1200px)" srcset="img/icon-social/inst-desktop.png">
+                        <img class="footer-social__img" src="img/icon-social/inst-pur-mobile@1x.png" width="80" height="80" alt="in">
+                      </picture>
+                      <span class="visually-hidden">Instagram</span>
+                    </a>
+                  </li>
+                  <li class="footer-social__item">
+                    <a class="footer-social__link" href="#">
+                      <picture>
+                        <source class="footer-social__img footer-social__img--mod" media="(min-width:1200px)" srcset="img/icon-social/tlg-desktop.png">
+                        <img class="footer-social__img" src="img/icon-social/tlg-pur-mobile@1x.png" width="80" height="80" alt="tlf">
+                      </picture>
+                      <span class="visually-hidden">Telefram</span>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </section>
         </div>
-      </section>
-      <section class="contacts">
-        <div class="container">
-          <h2 class="contacts__heading global__header-external">Contacts</h2>
-          <ul class="contacts__list">
-            <li class="contacts__item">
-              <a class="contacts__link" href="#">ceo@mmtech.io</a>
-            </li>
-            <li class="contacts__item">
-              <a class="contacts__link" href="#">pr@mmtech.io</a>
-            </li>
-          </ul>
-        </div>
-      </section>
+      </div>
     </div>
-    <section class="footer-social">
-      <div class="container">
-        <h2 class="visually-hidden">social networks</h2>
-        <ul class="footer-social__list">
-          <li class="footer-social__item">
-            <a class="footer-social__link" href="#">
-              <span class="visually-hidden">Facebook</span>
-            </a>
-          </li>
-          <li class="footer-social__item">
-            <a class="footer-social__link" href="#">
-              <span class="visually-hidden">Facebook</span>
-            </a>
-          </li>
-          <li class="footer-social__item">
-            <a class="footer-social__link" href="#">
-              <span class="visually-hidden">Facebook</span>
-            </a>
-          </li>
-          <li class="footer-social__item">
-            <a class="footer-social__link" href="#">
-              <span class="visually-hidden">Facebook</span>
-            </a>
-          </li>
-    </section>
   </footer>
   <script>
     var navMain = document.querySelector('.main-nav');

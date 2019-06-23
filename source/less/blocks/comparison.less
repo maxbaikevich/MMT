@@ -14,3 +14,42 @@
 .comparison {
   margin-bottom: 25px;
 }
+
+@media (min-width: @desktop) {
+  .comparison__img-left {
+    width: 569px;
+    height: 462px;
+    margin-left: 2px;
+  }
+  .comparison__img-right {
+    width: 569px;
+    height: 462px;
+    margin-top: -3px;
+  }
+
+  .comparison__wrapper {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 57px;
+  }
+
+  .comparison__wrapper::before {
+    content: "";
+    position: absolute;
+    width: 782px;
+    height: 1px;
+    background-color:#e5e5e5;
+    bottom: -58px;
+    left: 205px;
+
+  }
+  .comparison__heading-internal {
+    margin-bottom: 59px;
+  }
+  .comparison {
+    margin-bottom: 129px;
+  }
+
+
+}

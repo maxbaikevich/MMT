@@ -38,6 +38,7 @@
   .services__grid {
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-around;
   }
 
   .services__box {
@@ -58,5 +59,31 @@
     border: 5px solid transparent;
     border-left: 8px solid transparent;
   }
+
+  .services__box:nth-child(3) {
+    margin-right: 0;
+  }
+
+  .services__box:nth-child(6) {
+    margin-right: 0;
+  }
+  .services__box {
+    margin-right: 40px;
+    padding-left: 0;
+    margin-bottom: 42px;
+  }
+  .services {
+    background-color: @top-color;
+    padding-top: 79px;
+    padding-bottom: 36px;
+    margin-bottom: 83px;
+  }
+
+  .services__heading {
+  position: relative;
+  margin-bottom: 8px;
+  line-height: 43px;
+}
+
 
 }

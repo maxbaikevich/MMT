@@ -1,0 +1,102 @@
+@media (min-width: @desktop) {
+  .map-desktop {
+    display: block;
+  }
+
+  .map-desktop__list {
+    .site-rezet ();
+    display: flex;
+    justify-content: space-between;
+    margin-top: 195px;
+  }
+
+  .map-desktop__items-block {
+    display: flex;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: @top-color;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+  }
+
+  .map-desktop__number {
+    display:inline;
+    font-size: 20px;
+    color: #ffffff;
+    font-weight: 700;
+  }
+
+  .map-desktop__year {
+    position: absolute;
+    margin: 0;
+    color: #e5e5e5;
+    text-transform: uppercase;
+  }
+
+  .map-desktop__items-box {
+    position: relative;
+  }
+
+  .map-desktop__year--top-position {
+    top: -50px;
+  }
+
+  .map-desktop__year--bottom-position {
+    top: 60px;
+    left: -30px;
+  }
+
+  .map-desktop__items {
+    position: relative;
+  }
+
+  .map-desktop__items::after {
+    content: "";
+    position: absolute;
+    width: 49px;
+    height: 5px;
+    background-color: @header-color;
+    left: 40px;
+    top: 16px;
+  }
+
+  .map-desktop__items--mod::after {
+    display: none;
+  }
+
+  .map-desktop__items-text {
+    position: absolute;
+    width: 228px;
+  }
+
+  .map-desktop__items-text--top {
+    top: -170px;
+  }
+
+  .map-desktop__items-text--bottom {
+  top: 77px;
+  left: -30px;
+  }
+
+  .map-desktop__items-text {
+    display: none;
+    color: @top-color;
+  }
+
+  .map-desktop__items-box:hover .map-desktop__items-text{
+    display: block;
+    transition: 1s;
+  }
+
+  .map-desktop__items-box:hover .map-desktop__year{
+    color:@header-color;
+    transition: 1s;
+  }
+
+  .map-desktop__items-block:hover {
+    opacity: 0.8;
+    transition: 0.5s;
+  }
+}

@@ -12,3 +12,29 @@
 .information__item {
   margin-bottom: 12px;
 }
+@media (min-width: @desktop) {
+  .information__heading {
+    text-align: left;
+  }
+  .information__link {
+    font-size: 22px;
+    line-height: 50px;
+  }
+  .information__list {
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-top: 58px;
+  }
+  .information {
+    position: relative;
+  }
+  .information::before {
+    content: "";
+    position: absolute;
+    width: 1px;
+    height: 439px;
+    background-color: #e5e5e5;
+    left: 312px;
+    top: 12px;
+  }
+}

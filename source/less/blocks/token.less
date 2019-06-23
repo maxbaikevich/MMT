@@ -13,6 +13,7 @@
   margin-top: 20px;
 }
 .token__text-mod {
+  display: block;
   margin-top: 5px;
 }
 
@@ -47,4 +48,94 @@
 }
 .token__info-text-mod {
   margin-top: 5px;
+}
+.token__info-text-mod--desktop {
+  display: block;
+  margin-top: 5px;
+}
+@media (min-width: @desktop) {
+  .token__img {
+    width: 1180px;
+    height: 334px;
+  }
+
+  .token {
+    margin-top: 83px;
+    margin-bottom: 65px;
+  }
+
+  .token__schedule-cripto {
+    padding-top: 72px;
+    padding-left: 4px;
+    margin-bottom: 67px;
+  }
+
+  .token__text {
+    font-size: 22px;
+    line-height: 29px;
+    padding-left: 20px;
+  }
+
+  .token__text-mod {
+    display: inline;
+    padding-left: 8px;
+  }
+
+  .token__text--margin {
+    display: block;
+    padding-left: 0;
+  }
+
+  .token__schedule-many {
+    display: none;
+  }
+
+  .token__img--mod{
+    width: 1180px;
+    height: 468px;
+    padding-left: 5px;
+  }
+
+  .token__text-box {
+    margin-bottom: 92px;
+  }
+
+  .token__info-decor {
+    float:left; /* Выравнивание по левому краю */
+    margin-right: 24px;
+    margin-top: 18px;
+    margin-left: 2px;
+    margin-bottom: 20px;
+
+  }
+
+  .token__info-text {
+    font-size: 22px;
+    line-height: 29px;
+  }
+
+  .token__info-wrapper {
+    padding-left: 18px;
+  }
+
+  .token__info {
+    background-color: @top-color;
+    padding-top: 26px;
+    padding-bottom: 55px;
+    margin-bottom: 83px;
+  }
+
+  .token__info-decor {
+    font-size: 85px;
+  }
+
+  .token__info-box-bottom {
+    margin-top: 10px;
+    margin-left: 5px;
+  }
+
+  .token__info-text-mod--desktop {
+  display: inline;
+
+  }
 }
