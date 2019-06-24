@@ -50,7 +50,46 @@
 
 .about__text-box {
   background-color: #ffffff;
-  padding-top: 20px;
+  padding-top: 12px;
+}
+
+@media (min-width: @tablet) {
+  .about {
+  margin-bottom: 55px;
+  }
+
+  .about__top-heading {
+    font-size: 60px;
+    text-align: center;
+  }
+
+  .about__heading {
+    font-size: 34px;
+  }
+
+  .about__top-heading::before {
+  width: 260px;
+  bottom: -30px;
+  left: 186px;
+  }
+
+  .about__text {
+    color: @top-color;
+    font-size: 20px;
+    line-height: 26px;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-bottom: 5px;
+    margin: 0;
+  }
+
+  .about__text-box {
+  background-color: #ffffff;
+  padding-top: 30px;
+  }
+  .about__text-mod {
+  margin-top: 5px;
+}
 }
 
 @media (min-width: @desktop) {

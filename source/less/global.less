@@ -45,6 +45,30 @@ body {
   clip-path: polygon(0 0, 0 0, 0 0, 0 0);
 }
 
+@media (min-width: @tablet) {
+  body {
+    min-width: 768px;
+  }
+
+  .container {
+    width: 648px;
+    margin: 0 auto;
+    padding: 0 60px;
+  }
+
+  .container-nopading {
+    width: 648px;
+    margin: 0 auto;
+  }
+  .container-nopading__position {
+    width: 700px;
+    padding-left: 20px;
+
+
+  }
+
+}
+
 @media (min-width: @desktop) {
   body {
     min-width: 1440px;

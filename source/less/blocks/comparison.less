@@ -14,17 +14,42 @@
 .comparison {
   margin-bottom: 25px;
 }
+@media (min-width: @tablet) {
+  .comparison__heading-internal {
+  color: @top-color;
+  text-align: left;
+  margin-bottom: 16px;
+}
+  .comparison__img-left {
+    width: 648px;
+    height: 526px;
+    margin-left: -5px;
+    margin-top: 8px;
+  }
+  .comparison__img-right {
+     width: 648px;
+    height: 526px;
+
+  }
+  .comparison__box {
+  padding-top: 60px;
+  margin-left: 10px;
+
+}
+
+}
 
 @media (min-width: @desktop) {
   .comparison__img-left {
     width: 569px;
     height: 462px;
     margin-left: 2px;
+    margin-top: 0;
   }
   .comparison__img-right {
     width: 569px;
     height: 462px;
-    margin-top: -3px;
+    margin-top: -5px;
   }
 
   .comparison__wrapper {
@@ -46,10 +71,14 @@
   }
   .comparison__heading-internal {
     margin-bottom: 59px;
+    text-align: center;
   }
   .comparison {
     margin-bottom: 129px;
   }
+  .comparison__box {
+  padding-top: 24px;
+  margin-left: 0;
 
-
+}
 }
