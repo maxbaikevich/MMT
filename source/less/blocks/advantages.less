@@ -47,6 +47,50 @@
   top: 13px;
 }
 
+@media (min-width: @tablet) {
+  .advantages__img {
+    width: 500px;
+    height: 500px;
+    margin-bottom: 18px;
+  }
+  .advantages__wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-top: 0;
+
+  }
+
+  .advantages__hedline {
+    text-align: center;
+    margin-bottom: 52px;
+  }
+  .advantages__list-protection {
+    width: 500px;
+  }
+
+  .advantages__list-element {
+    display: inline;
+    font-size: 20px;
+  }
+  .advantages__list-item {
+    font-size: 20px;
+    padding-left: 13px;
+    line-height: 30px;
+  }
+  .advantages__list-br{
+    display:none;
+  }
+  .advantages__box {
+  padding-top: 45px;
+  }
+  .advantages {
+    background-color: @top-color;
+    padding-bottom: 38px;
+  }
+
+}
+
 @media (min-width: @desktop) {
   .advantages__list-element {
     display: inline;
