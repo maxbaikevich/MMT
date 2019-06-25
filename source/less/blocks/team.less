@@ -31,6 +31,41 @@
 .team {
   margin-bottom: 33px;
 }
+@media (min-width: @tablet) {
+  .team__img {
+    width: 290px;
+    height: 290px;
+  }
+  .team__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding-top: 15px;
+    margin-bottom: 155px;
+  }
+  .team__name {
+    font-size: 26px;
+    line-height: 30px;
+    margin-top: 25px;
+
+  }
+  .team__position {
+    font-size: 20px;
+    margin-top: 20px;
+  }
+
+  .team__element {
+    margin-bottom: 10px;
+  }
+  .team__element--mod {
+    margin-bottom: 0;
+  }
+
+  .team__item:nth-child(7) {
+    margin-left: 180px;
+    margin-bottom: 0
+  }
+}
 
 @media (min-width: @desktop) {
   .team__list {
@@ -84,9 +119,5 @@
 
   .team__element {
     margin-bottom: 37px;
-  }
-
-  .team__element--mod {
-    margin-bottom: 0;
   }
 }
