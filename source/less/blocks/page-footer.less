@@ -3,14 +3,29 @@
   padding-top: 29px;
   padding-bottom: 0;
 }
+
+@media (min-width: @tablet) {
+  .page-footer__flex-wrapper {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  .page-footer__wrapper {
+    background-color: @top-color;
+    padding-top: 68px;
+    padding-bottom: 0;
+  }
+}
+
 @media (min-width: @desktop) {
   .page-footer__flex-wrapper {
     display: flex;
     justify-content: space-between;
   }
+
   .page-footer__wrapper {
-  background-color: @top-color;
-  padding-top: 79px;
-  padding-bottom: 140px;
-}
+    background-color: @top-color;
+    padding-top: 79px;
+    padding-bottom: 140px;
+  }
 }
