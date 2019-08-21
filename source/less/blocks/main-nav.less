@@ -101,6 +101,22 @@
   .main-nav {
     margin-bottom: 22px;
   }
+  .main-nav--opened .main-nav__toggle {
+    top: 0;
+    right: auto;
+    left: 480px;
+    padding: 50px;
+    &::before,
+    &::after {
+      content: "";
+      position: absolute;
+      top: 10px;
+      left: 80px;
+      width: 36px;
+      height: 2px;
+      background-color: #ffffff;
+    }
+  }
 }
 
 @media (min-width: @desktop) {
